@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    tools:context=".Mhome"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_circle_left_24"
+        android:id="@+id/i2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:background="#FFF3E0"
+
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:letterSpacing="0.12"
+        android:padding="12dp"
+        android:paddingTop="20dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:text="Welcome to Nutri_Factory!"
+        android:textColor="#F4511E"
+        android:textSize="26sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Body Mass Index (BMI)"
+        android:textColor="#49B154"
+        android:textSize="24sp"
+    android:textStyle="bold"
+    android:letterSpacing="0.1"
+    android:fontFamily="cursive"
+    android:shadowColor="#80000000"
+    android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowRadius="4"
+    android:background="?attr/selectableItemBackground"
+    android:padding="10dp"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Enter weight (kg)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter height (feet.inches)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:text="Calculate BMI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingLeft="10sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</LinearLayout>
+
+</LinearLayout>

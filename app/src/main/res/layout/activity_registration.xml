@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textSize="20dp"
+        android:paddingLeft="55dp"
+        android:textStyle="bold"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Gender -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender">
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+
+            </RadioGroup>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Diet Preference -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diet Preference">
+
+            <RadioGroup
+                android:id="@+id/radioGroupDiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonVegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetarian" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNonVegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non-Vegetarian" />
+            </RadioGroup>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+
+        <!-- Already Registered Button -->
+        <Button
+            android:id="@+id/buttonAlreadyRegistered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Registered? Click Here" />
+
+    </LinearLayout>
+</RelativeLayout>

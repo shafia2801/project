@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact"
+    android:background="@drawable/conta"
+    tools:ignore="HardcodedText"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im"
+android:src="@drawable/baseline_arrow_circle_left_24"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        android:src="@drawable/insta"
+        android:paddingTop="240dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="39dp"
+       android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="  www.instagram.com/shafia2801"
+        android:textColor="#263238"
+        tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:src="@drawable/link"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/ttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.linkedin.com/in/shafia2801"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#263238"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="70dp"
+        android:paddingTop="25dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gmail"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="mail.google.com/shafia2801"
+        android:textColor="#263238"
+        tools:ignore="RtlSymmetry" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    tools:context=".VegNormalWeightActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scrollViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_food_bank_24"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textViewFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewFoodQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

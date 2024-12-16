@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Nutri_Factory</string>
+    <string name="scrolltext" translatable="false"> <b> <u> Welcome to Nutri_Factory\!  </u> </b>
+
+    At Nutri_Factory, we believe that eating healthy should be simple, personalized, and enjoyable.
+        Our mission is to empower individuals to make informed dietary choices
+        based on BMI.
+
+   <b> Nutri_Factory combines  scientific research with cutting-edge technology</b>
+        to provide personalized nutrition advice at your fingertips.
+
+    Whether you\'re looking to maintain a healthy lifestyle or optimize your nutritional intake,
+        NutriFactory is here to help.<b>  Our user-friendly app analyzes your age and gender to offer customized food recommendations and portion sizes,
+            ensuring that you receive the nutrients your body needs to thrive.</b>
+
+<b>Nutri_Factory provides customizable reminders</b> to keep you on track with your goals.
+
+    Whether it\’s drinking more water, eating regular meals, or incorporating specific foods, <b>our reminders have you covered.</b>
+    We\’ll send timely notifications that fit your schedule.
+
+
+
+<b>Join the Nutri_Factory community today</b> and take control of your nutrition with confidence.
+
+
+
+  <b> <u> Eat well, live well with NutriFactory\! </u></b>
+    </string>
+    <string name="profile_image">Profile Image</string>
+</resources>

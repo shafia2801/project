@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bk"
+    android:paddingTop="10dp"
+    tools:context=".Setting">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ima"
+        android:src="@drawable/baseline_arrow_circle_left_24"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Profile : "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+    <!-- Profile Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/profile_image"
+            android:src="@drawable/logo" />
+        <!-- Change Profile Image Button -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="User Name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="user@example.    com"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonChangeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Image"
+         />
+    <!-- Notification Preferences -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Notification Preferences : "
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Switch
+        android:id="@+id/switchNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Enable Notifications   " />
+
+    <!-- Theme Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Theme : "
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18sp"
+            android:text="Light Mode" />
+
+        <RadioButton
+            android:id="@+id/radioDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Dark Mode" />
+    </RadioGroup>
+
+    <!-- Feedback Section -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <EditText
+        android:id="@+id/editTextReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your feedback"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonSubmitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextReview"
+        android:layout_marginTop="5dp"
+        android:text="Submit Feedback"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/buttonFaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:minHeight="48dp"
+        android:text="Show FAQ"
+        tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+</LinearLayout>

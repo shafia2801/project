@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+        android:id="@+id/hm"
+        android:icon="@drawable/homeicon"
+        app:showAsAction="ifRoom"
+
+        tools:ignore="HardcodedText" />
+    <item android:title="Contact"
+        android:id="@+id/cnt"
+        app:showAsAction="withText"
+        android:icon="@drawable/contact"
+        tools:ignore="HardcodedText" />
+
+
+    <item android:title="Settings"
+        android:id="@+id/set"
+app:showAsAction="collapseActionView"
+        android:icon="@drawable/setting"
+        tools:ignore="HardcodedText" />
+
+    <item android:title="Share"
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        tools:ignore="HardcodedText" />
+
+    <item android:title="Logout"
+        android:id="@+id/lgt"
+        app:showAsAction="never"
+        android:icon="@drawable/logout"
+        tools:ignore="HardcodedText" />
+
+    <item android:title="Account management"
+        android:id="@+id/profile"
+        app:showAsAction="never"
+        android:icon="@drawable/logout"
+        tools:ignore="HardcodedText" />
+
+
+</menu>
+

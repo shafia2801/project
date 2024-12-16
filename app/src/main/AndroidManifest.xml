@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="Nutri_factory"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nutri_factory"
+        tools:targetApi="31"  >
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".VegObeseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VegOverweightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VegNormalWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VegUnderweightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profie"
+            android:exported="false" />
+        <activity
+            android:name=".dup"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationReceiver"
+            android:exported="false" />
+        <activity
+            android:name=".ObeseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OverweightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NormalWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UnderweightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Contact"
+            android:exported="true"
+            android:theme="@style/Base.Theme.Nutri_factory" />
+        <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Share"
+            android:exported="false" />
+        <activity
+            android:name=".Mhome"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:theme="@style/Theme.Menu" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".ReminderReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

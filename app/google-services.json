@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "203772709327",
+    "firebase_url": "https://myfirebase-f9939-default-rtdb.firebaseio.com",
+    "project_id": "myfirebase-f9939",
+    "storage_bucket": "myfirebase-f9939.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203772709327:android:1e6e1b14c13c5d2fc6aaba",
+        "android_client_info": {
+          "package_name": "com.example.faceid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203772709327-5pa774gbjq8612go4j6lt4f1lfl8uc1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcwmJPdylw9xx--PErUjPT-EUay1O-gBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203772709327-5pa774gbjq8612go4j6lt4f1lfl8uc1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203772709327:android:5c1617fe4762a2a4c6aaba",
+        "android_client_info": {
+          "package_name": "com.example.myfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203772709327-5pa774gbjq8612go4j6lt4f1lfl8uc1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcwmJPdylw9xx--PErUjPT-EUay1O-gBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203772709327-5pa774gbjq8612go4j6lt4f1lfl8uc1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203772709327:android:79edf0e7efbd5ce1c6aaba",
+        "android_client_info": {
+          "package_name": "com.example.nutri_factory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203772709327-5pa774gbjq8612go4j6lt4f1lfl8uc1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcwmJPdylw9xx--PErUjPT-EUay1O-gBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203772709327-5pa774gbjq8612go4j6lt4f1lfl8uc1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

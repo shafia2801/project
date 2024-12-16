@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bk">
+
+
+    <ImageView
+        android:id="@+id/profieImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_account_circle_24"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="28dp"
+        >
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+        <ImageView
+            android:id="@+id/editUsernameIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="28dp">
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck" />
+        <ImageView
+            android:id="@+id/editPasswordIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save changes"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#10B832"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/deleteAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTint="#D63535"
+        android:layout_gravity="center"
+        />
+
+
+
+
+</LinearLayout>
